@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/abobora.png" type="image/x-icon">
+    <title>CreepyStore</title>
+    <link rel="stylesheet" href="./style/extends.css" >
+    <script src="script/script.js" defer></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar__content max-width mb-0">
+            <a href="#">
+                <h1 class="logo">CreepyStore</h1>
+            </a>
+            <ul class="navbar__links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="navbar__mobile">
+                <img src="img/menu.svg" alt="menu" class="burguer" />
+                <ul class="mobile__links">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="ap__content">
+            <h1 class="apresentation">Feliz Halloween</h1>
+            <h2>Explore o catálogo encantado da nossa empresa e permita que sua imaginação voe alto nesta temporada de Halloween. Estamos aqui para tornar cada momento <strong>assustadoramente divertido!</strong></h2>
+            <a href="#about" class="btn btn-primary">Saiba mais!</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="colunm-left">
+            <img src="img/background-about.jpg" alt="Fantasia">
+        </div>
+        <div class="colunm-rigth">
+            <h2>Sobre</h2>
+            <p>Além das <strong>incríveis fantasias</strong>, oferecemos uma ampla variedade de acessórios
+                <strong>assustadoramente encantadores</strong>, desde máscaras intrigantes até decorações que
+                transformam qualquer ambiente. Nosso compromisso é tornar o Halloween uma celebração inesquecível para
+                todos, proporcionando produtos que capturam a essência desta festa tão amada.
+            </p>
+            <a href="#contact" class="link-contato">Confira os preços &RightArrow;</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+
+            <form action="script/script.php" method="post" class="form__contato">
+                <h2>Entre em Contato!</h2>
+                <p><strong>Saiba mais sobre preços, fantasias, acessórios e muito mais! <br> Preencha o formulario e entraremos em contato</strong></p>
+                <div class="box">
+                    <input type="text" name="nome" id="nome" class="input" required autocomplete="off">
+                    <label for="nome">Me diga seu nome...</label>
+                </div>
+                <div class="box">
+                    <input type="email" name="email" id="email" class="input" required autocomplete="off">
+                    <label for="email">Me diga seu email...</label>
+                </div>
+                <div class="box">
+                    <input type="text" name="email" id="email" class="input" required autocomplete="off">
+                    <label for="email">Deixe uma mensagem...</label>
+                </div>
+                <button id="btn-email" type="submit" class="btn btn-primary">Enviar</button>
+                
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <h2>
+            © 2023 Vinicius Kenji. Todos os direitos reservados.
+        </h2>
+    </footer>
+</body>
+
+</html>
